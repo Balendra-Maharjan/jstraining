@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffa600;
+    color: #fff;
+    text-align: center;
+}
+
+.clock-container {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 20px;
+    border: 1px solid #fff;
+    background: #ffa600;
+    outline: none;
+    color: #fff;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;    
+}
+
+button:hover {
+    border: 1px solid #ffa600;
+    background: #fff;
+    color: #ffa600;
+}
