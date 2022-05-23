@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 50px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+ol li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid rgb(116, 115, 115);   
+    margin-bottom: 10px; 
+}
+
+.title {
+    flex: 1;
+}
+
+.links {
+    max-width: 40%;
+    flex-basis: 40%;
+}
+
+.btn {
+    border-radius: 5px;
+    background: rgb(243, 34, 27);
+    border:1px solid rgb(243, 34, 27);
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}

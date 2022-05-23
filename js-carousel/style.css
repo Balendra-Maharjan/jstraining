@@ -1,0 +1,70 @@
+.viewport {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.viewport img {
+    height: 500px;
+    width: 500px;
+    display: block;
+    aspect-ratio: 1/1;
+}
+.image-holder {
+    position: relative;
+    display: flex;
+    transition: 1s ease-in-out all;    
+}
+
+nav .prev,
+nav .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    background: rgb(250, 170, 22);
+    color: #000;
+    padding:10px 20px;
+    transition: color 0.5s ease;
+    border: none;
+    cursor: pointer;
+}
+
+nav .prev:hover,
+nav .next:hover {
+    color: #fff;
+}
+nav .prev {
+    left: 15px;
+}
+
+nav .next {
+    right: 15px;
+}
+
+.dots-container {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dots-container .dots {    
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.5;
+    margin: 0 10px 10px;
+    cursor: pointer;
+}
+
+.dots-container .dots.active {
+    opacity: 1;
+}
