@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#main-Board {
+    background: rgb(90, 90, 90);
+    /* margin: auto; */
+    position: relative;
+}
+
+.ball {
+    background: #000;
+    position: absolute;
+}
+
+.ball:nth-child(2) {
+    left: 350px;
+    top: 300px;
+}
