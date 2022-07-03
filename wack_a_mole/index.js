@@ -21,7 +21,7 @@ function run(){
         clearTimeout(timer)
         setTimeout(() => {
             hole.removeChild(img)
-            run()
+            run()           
         }, 500)
     })
 
