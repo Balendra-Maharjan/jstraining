@@ -43,9 +43,8 @@ for (var i = 0; i < 2; i++) {
     var y = Math.random()  * innerHeight;
     var dy = 5;
     var radius = 30;    
-    circleArray.push(new Circle(x,y,dx,dy,radius)); 
-    
-    // var circle = new Circle(x,y,dx,dy,radius);    
+    circleArray.push(new Circle(x,y,dx,dy,radius));     
+      
 }
 
 console.log(circleArray);
