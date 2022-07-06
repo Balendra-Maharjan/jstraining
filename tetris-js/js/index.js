@@ -6,7 +6,7 @@ class Tetris {
     this.x = 3;
     this.y = 0;
   }
-  // collision on bottom wall
+  // collision on y direction wall
   checkBottom() {
     for (let i = 0; i < this.template.length; i++) {
       for (let j = 0; j < this.template.length; j++) {
@@ -339,7 +339,7 @@ class Tetris {
             };
             
             let drawScore = () => {
-              sctx.clearRect(0, 220, scoreCanvas.width, scoreCanvas.height);
+              sctx.clearRect(0, 0, scoreCanvas.width, scoreCanvas.height);
               sctx.font = "22px Poppins";
               sctx.fillStyle = "black";
               sctx.fillText("score", 80, 20);
@@ -349,7 +349,7 @@ class Tetris {
             };
             
             let highScore = () => {
-              hsctx.clearRect(0, 220, highScoreCanvas.width, highScoreCanvas.height);
+              hsctx.clearRect(0, 0, highScoreCanvas.width, highScoreCanvas.height);
               hsctx.font = "22px Poppins";
               hsctx.fillStyle = "black";
               hsctx.fillText("High Score", 40, 20);
@@ -418,3 +418,7 @@ class Tetris {
             resetVars();
             gameLoop();
             
+            let reset_btn = document.getElementById('reset');
+            reset_btn.addEventListener('click', function click(e) {
+              resetVars();
+            });
